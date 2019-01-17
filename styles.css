@@ -1,0 +1,178 @@
+* {
+  font-family: Helvetica;
+}
+html {
+  background-color: #ff6666;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='30' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23222' stroke-width='3.8' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
+}
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  position: relative;
+  margin-top: 2rem;
+  background-color: #fff;
+  margin-bottom: 2rem;
+}
+article section {
+  padding: 2rem;
+  position: relative;
+}
+h1 {
+  font-size: 1rem;
+  margin: 0 0.5rem;
+  width: 100%;
+}
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 1.5rem;
+}
+h3 {
+  font-size: 1rem;
+  text-align: center;
+  margin: 1.5rem;
+}
+h4 {
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+header h4 {
+  display: block;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-style: italic;
+  text-decoration: none;
+}
+small {
+  padding: 0.5rem;
+  font-style: italic;
+  position: absolute;
+  top: 2rem;
+  right: 0;
+}
+p {
+  line-height: 1.5;
+  font-size: 1rem;
+  margin: 2rem 0;
+}
+.logo {
+  display: flex;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+header svg {
+  margin-left: 0.5rem;
+  width: 1rem;
+}
+svg {
+  width: 2rem;
+}
+img {
+  object-fit: cover;
+  width: 100%;
+}
+article img {
+  height: 40vh;
+}
+article header {
+  flex-direction: column;
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='30' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23222' stroke-width='3.8' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
+  padding-bottom: 0;
+}
+
+hgroup {
+  width: 80%;
+  z-index: 1;
+  background-color: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+ul {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+li {
+  padding: 0.5rem;
+  text-align: center;
+}
+strong {
+  color: rgb(155, 0, 0);
+}
+footer nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem 1rem;
+}
+footer nav section {
+  display: flex;
+  align-items: center;
+}
+figure {
+  margin-bottom: 2rem;
+  width: 100%;
+}
+figure img {
+  margin-top: -6rem;
+}
+figcaption {
+  font-style: italic;
+  text-align: center;
+  background-color: #fff;
+  padding: 1rem;
+}
+a {
+  font-family: inherit;
+  border: 2px solid black;
+  padding: 0.5rem;
+  border-radius: 0.5rem 0.5rem;
+  background-color: #ff6666;
+  font-size: 0.7rem;
+}
+a:hover {
+  color: #ff6666;
+  background-color: black;
+}
+@media (min-width: 620px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 1.3rem;
+  }
+  button,
+  header a {
+    font-size: 1rem;
+  }
+  header svg {
+    width: 1.5rem;
+  }
+}
+@media (min-width: 1000px) {
+  article {
+    width: 70vw;
+  }
+}
