@@ -2,7 +2,7 @@
   font-family: Helvetica;
 }
 html {
-  background-color: #ff6666;
+  background-color:white;
 }
 main {
   display: flex;
@@ -91,7 +91,8 @@ img {
   width: 100%;
 }
 article img {
-  height: 40vh;
+  min-width: 40vh;
+  max-height:40vh;
 }
 article header {
   flex-direction: column;
@@ -101,7 +102,7 @@ article header {
 }
 
 hgroup {
-  width: 80%;
+  width: 90%;
   z-index: 1;
   background-color: #fff;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
@@ -139,20 +140,31 @@ figcaption {
   font-style: italic;
   text-align: center;
   background-color: #fff;
+  opacity: .7;
   padding: 1rem;
 }
 a {
   font-family: inherit;
+  font-weight: bold;
   border: 2px solid black;
-  padding: 0.5rem;
-  border-radius: 0.5rem 0.5rem;
-  background-color: #ff6666;
+  margin: 0.5em;
+  padding: .8rem .5rem .5rem;
+  background: none;
   font-size: 0.7rem;
 }
-a:hover {
-  color: #ff6666;
-  background-color: black;
+
+.offset {  
+  box-shadow: 
+    0.3rem 0.3rem 0 0 black,
+    inset 0.3rem 0.3rem 0 0 black;
+  transition: .3s box-shadow;
 }
+.offset:hover {
+  box-shadow: 
+      0 0 0 0 black,
+      inset 6rem 3.5rem 0 0 white;
+}
+
 @media (min-width: 620px) {
   h1 {
     font-size: 2rem;
@@ -163,9 +175,9 @@ a:hover {
   h3 {
     font-size: 1.3rem;
   }
-  button,
-  header a {
+  a {
     font-size: 1rem;
+    padding: 1rem 2rem;
   }
   header svg {
     width: 1.5rem;
